@@ -1,0 +1,961 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blog-details </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("is_dark");
+        } 
+        if (localStorage.getItem("theme-color") === "light") {
+          document.documentElement.classList.remove("is_dark");
+        } 
+    </script>
+
+</head>
+
+
+<body class="body__wrapper">
+    <!-- pre loader area start -->
+    <!-- <div id="back__preloader">
+        <div id="back__circle_loader"></div>
+            <div class="back__loader_logo">
+                <img loading="lazy"  src="img/pre.png" alt="Preload">
+            </div>
+        </div>
+    </div> -->
+    <!-- pre loader area end -->
+
+    <!-- Dark/Light area start -->
+    <div class="mode_switcher my_switcher">
+        <button id="light--to-dark-button" class="light align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512"><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+
+            <span class="light__mode">Light</span>
+            <span class="dark__mode">Dark</span>
+        </button>
+    </div>
+    <!-- Dark/Light area end -->
+
+    <main class="main_wrapper overflow-hidden">
+
+         <!-- topbar__section__stert -->
+         <div class="topbararea topbararea--2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="topbar__left">
+                            <ul>
+                                <li>
+                                    Call Us: +1 800 123 456 789
+                                </li>
+                                <li>
+                                    - Mail Us: SchoolMailHere@mail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="topbar__right">
+                            <div class="topbar__icon">
+                                <i class="icofont-location-pin"></i>
+                            </div>
+                            <div class="topbar__text">
+                                <p>684 West College St. Sun City, USA</p>
+                            </div>
+                            <div class="topbar__list">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="icofont-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-youtube-play"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- topbar__section__end -->
+
+        <!-- headar section start -->
+        <header>
+            <div class="headerarea headerarea__2 header__sticky header__area">
+                <div class="container desktop__menu__wrapper">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-6">
+                            <div class="headerarea__left">
+                                <div class="headerarea__left__logo">
+
+                                    <a href="index.html"><img loading="lazy"  src="img/logo/logo_1.png" alt="logo"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 main_menu_wrap">
+                            <div class="headerarea__main__menu">
+                                <nav>
+                                    <ul>
+
+
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="index.html">Home </a>
+                                            <div class="headerarea__submenu mega__menu__wrapper mega__menu__grid__5"></div>
+
+                                        </li>
+
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="about.html">About </a>
+                                        </li>
+
+
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="gallery.html">Gallery </a>
+
+                                        </li>
+
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="blog.html">Blog </a>
+
+                                        </li>
+
+
+                                    <li><a class="headerarea__has__dropdown" href="contact.html">Contact Us</a>
+                                    
+                                    </li>
+                                </li>
+                                        
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="headerarea__right">
+                                <div class="headerarea__button mx-3">
+                                    <a href="#">Enroll Now</a>
+                                </div>
+
+                                <div class="headerarea__button" >
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="container-fluid mob_menu_wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="mobile-logo">
+                                <a class="logo__dark" href="#"><img loading="lazy"  src="img/logo/logo_1.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="header-right-wrap">
+    
+                                <div class="headerarea__right">
+    
+                                    <div class="header__cart">
+                                        <a href="#"> <i class="icofont-cart-alt"></i></a>
+                                        <div class="header__right__dropdown__wrapper">
+                                            <div class="header__right__dropdown__inner">
+                                                <div class="single__header__right__dropdown">
+    
+                                                    <div class="header__right__dropdown__img">
+                                                        <a href="#">
+                                                            <img loading="lazy"  src="img/grid/cart1.jpg" alt="photo">
+                                                        </a>
+                                                    </div>
+                                                    <div class="header__right__dropdown__content">
+    
+                                                        <a href="shop-product.html">Web Directory</a>
+                                                        <p>1 x <span class="price">$ 80.00</span></p>
+    
+                                                    </div>
+                                                    <div class="header__right__dropdown__close">
+                                                        <a href="#"><i class="icofont-close-line"></i></a>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="single__header__right__dropdown">
+    
+                                                    <div class="header__right__dropdown__img">
+                                                        <a href="#">
+                                                            <img loading="lazy"  src="img/grid/cart2.jpg" alt="photo">
+                                                        </a>
+                                                    </div>
+                                                    <div class="header__right__dropdown__content">
+    
+                                                        <a href="shop-product.html">Design Minois</a>
+                                                        <p>1 x <span class="price">$ 60.00</span></p>
+    
+                                                    </div>
+                                                    <div class="header__right__dropdown__close">
+                                                        <a href="#"><i class="icofont-close-line"></i></a>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="single__header__right__dropdown">
+    
+                                                    <div class="header__right__dropdown__img">
+                                                        <a href="#">
+                                                            <img loading="lazy"  src="img/grid/cart3.jpg" alt="photo">
+                                                        </a>
+                                                    </div>
+                                                    <div class="header__right__dropdown__content">
+    
+                                                        <a href="shop-product.html">Crash Course</a>
+                                                        <p>1 x <span class="price">$ 70.00</span></p>
+    
+                                                    </div>
+                                                    <div class="header__right__dropdown__close">
+                                                        <a href="#"><i class="icofont-close-line"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <p class="dropdown__price">Total: <span>$1,100.00</span>
+                                            </p>
+                                            <div class="header__right__dropdown__button">
+                                                <a href="#" class="white__color">VIEW
+                                            CART</a>
+                                                <a href="#" class="blue__color">CHECKOUT</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="mobile-off-canvas">
+                                    <a class="mobile-aside-button" href="#"><i class="icofont-navigation-menu"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header section end -->
+
+        <!-- Mobile Menu Start Here -->
+        <div class="mobile-off-canvas-active">
+            <a class="mobile-aside-close"><i class="icofont  icofont-close-line"></i></a>
+            <div class="header-mobile-aside-wrap">
+                
+                <div class="mobile-menu-wrap headerarea">
+        
+                    <div class="mobile-navigation">
+        
+                        <nav>
+                            <ul class="mobile-menu">
+                                <li class="menu-item-has-children"><a href="index.html">Home</a></li>
+        
+        
+                                <li class="menu-item-has-children "><a href="">About Us</a></li>
+
+
+                                <li class="menu-item-has-children "><a href="#">Gallery</a></li>
+
+
+                                <li class="menu-item-has-children"><a href="#">Contact Us</a>
+
+                                </li>
+
+                            </ul>
+                        </nav>
+        
+                    </div>
+        
+                </div>
+                
+                <div class="mobile-social-wrap">
+                    <a class="facebook" href="#"><i class="icofont icofont-facebook"></i></a>
+                    <a class="twitter" href="#"><i class="icofont icofont-twitter"></i></a>
+                    <a class="pinterest" href="#"><i class="icofont icofont-pinterest"></i></a>
+                    <a class="instagram" href="#"><i class="icofont icofont-instagram"></i></a>
+                    <a class="google" href="#"><i class="icofont icofont-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu end Here -->
+
+        <!-- theme fixed shadow -->
+        <div>
+            <div class="theme__shadow__circle"></div>
+            <div class="theme__shadow__circle shadow__right"></div>
+        </div>
+        <!-- theme fixed shadow -->
+        <!-- breadcrumbarea__section__start -->
+
+        <div class="breadcrumbarea">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="breadcrumb__content__wraper" data-aos="fade-up">
+                            <div class="breadcrumb__title">
+                                <h2 class="heading">Blog Details</h2>
+                            </div>
+                            <div class="breadcrumb__inner">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li>Blog page</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="shape__icon__2">
+                <img loading="lazy"  class=" shape__icon__img shape__icon__img__1" src="img/herobanner/herobanner__1.png" alt="photo">
+                <img loading="lazy"  class=" shape__icon__img shape__icon__img__2" src="img/herobanner/herobanner__2.png" alt="photo">
+                <img loading="lazy"  class=" shape__icon__img shape__icon__img__3" src="img/herobanner/herobanner__3.png" alt="photo">
+                <img loading="lazy"  class=" shape__icon__img shape__icon__img__4" src="img/herobanner/herobanner__5.png" alt="photo">
+            </div>
+
+        </div>
+        <!-- breadcrumbarea__section__end-->
+
+        <div class="blogarea__2 sp_top_100 sp_bottom_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="blog__details__content__wraper">
+                            <div class="blog__details__img" data-aos="fade-up">
+                                <img loading="lazy"  src="img/blog/blog_21.png" alt="blog">
+                            </div>
+                            <div class="blog__details__content">
+                                <p class="content__1" data-aos="fade-up">We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service.
+                                </p>
+                                <p class="content__2" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum rhoncus, dolor eget viverra pretium, dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus. Vestibulum non justo consectetur,
+                                    cursus ante, tincidunt sapien. Nulla quis diam sit amet turpis interd enim. Vivamus faucibus ex sed nibh egestas elementum. Mauris et bibendum dui. Aenean consequat pulvinar luctus. Suspendisse consectetur tristique
+                                    tortor
+                                </p>
+                                <div class="blog__details__heading" data-aos="fade-up">
+                                    <h5>Experience is over the world visit</h5>
+                                </div>
+                                <p class="content__3" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum Phasellus rhoncus, dolor eget viverra pretium, dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus. Vestibulum non justo
+                                    consectetur, cursus ante, tincidunt sapien. Nulla quis diam sit amet turpis interdum accumsan quis nec enim. Vivamus faucibus ex sed nibh egestas elementum. Mauris et bibendum dui. Aenean consequat pulvinar luctus</p>
+                                <p class="content__4" data-aos="fade-up">We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service.
+                                </p>
+                                <p class="content__5" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum Phasellus rhoncus, dolor eget viverra pretium, dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus. Vestibulum non justo
+                                    consectetur, cursus ante, tincidunt sapien. Nulla quis diam sit amet turpis interdum accumsan quis nec enim. Vivamus faucibus ex sed nibh egestas elementum. Mauris et bibendum dui. Aenean consequat pulvinar luctus.
+                                    Suspendisse consectetur tristique tortor</p>
+                                <div class="blockquate__wraper" data-aos="fade-up">
+                                    <div class="blockquate__content">
+                                        <h3>Smashing Podcast Episode With Paul Boag What Is Conversion Optimization</h3>
+                                        <a href="#">John Mirnsdo</a>
+                                    </div>
+                                    <div class="blockquate__img">
+                                        <img loading="lazy"  src="img/blog/blog_22.png" alt="img">
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog__details__heading" data-aos="fade-up">
+                                    <h5>Experience is over the world visit</h5>
+                                </div>
+
+                                <p class="content__6" data-aos="fade-up">We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service</p>
+                                <p class="content__7" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum Phasellus rhoncus, dolor eget viverra pretium, dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus. Vestibulum non justo
+                                    consectetur, cursus ante, tincidunt sapien. Nulla quis diam sit amet turpis interdum accumsan quis nec enim. Vivamus faucibus ex sed nibh egestas elementum. Mauris et bibendum dui. Aenean consequat pulvinar luctus.
+                                    Suspendisse consectetur tristique tortor</p>
+                                <div class="row blog__details__margin">
+                                    <div class="col-xl-4 col-lg-4 col-md-4" data-aos="fade-up">
+                                        <div class="blog__details__img__2">
+                                            <img loading="lazy"  src="img/blog/blog_23.png" alt="blog">
+                                            <div class="registerarea__content course__details__video">
+                                                <div class="registerarea__video">
+                                                    <div class="video__pop__btn">
+                                                        <a class="video-btn" href="https://www.youtube.com/watch?v=vHdclsdkp28"> <img loading="lazy"  src="img/icon/video.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8">
+                                        <div class="blog__details__heading__2" data-aos="fade-up">
+                                            <h5>Why search Is Important ?</h5>
+                                        </div>
+                                        <div class="aboutarea__list__2 blog__details__list__2" data-aos="fade-up">
+                                            <ul>
+                                                <li>
+                                                    <i class="icofont-check"></i>
+                                                    <p>Lorem Ipsum is simply dummying text of the printing andtypesetting industry most of the standard.</p>
+                                                </li>
+                                                <li>
+                                                    <i class="icofont-check"></i>
+                                                    <p>Lorem Ipsum is simply dummying text of the printing andtypesetting industry most of the standard.</p>
+                                                </li>
+                                                <li>
+                                                    <i class="icofont-check"></i>
+                                                    <p>Lorem Ipsum is simply dummying text of the printing andtypesetting industry most of the standard.</p>
+                                                </li>
+                                                <li>
+                                                    <i class="icofont-check"></i>
+                                                    <p>Lorem Ipsum is simply dummying text of the printing andtypesetting industry most of the standard.</p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="blog__details__heading__2" data-aos="fade-up">
+                                    <h5>Let our investment management team</h5>
+                                </div>
+                                <p class="content__8" data-aos="fade-up">We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service.
+                                </p>
+                                <p class="content__9" data-aos="fade-up">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum Phasellus rhoncus, dolor eget viverra pretium, dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus. Vestibulum non justo consectetur, cursus ante, tincidunt
+                                    sapien. Nulla quis diam sit amet turpis interdum accumsan quis nec enim. Vivamus faucibus ex sed nibh egestas elementum. Mauris et bibendum dui. Aenean consequat pulvinar luctus. Suspendisse consectetur tristique tortor
+                                </p>
+
+                            </div>
+                            <div class="blog__details__tag" data-aos="fade-up">
+                                <ul>
+                                    <li class="heading__tag">
+                                        Tag
+                                    </li>
+                                    <li>
+                                        <a href="#">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">apps</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">data</a>
+                                    </li>
+                                </ul>
+                                <ul class="share__list" data-aos="fade-up">
+                                    <li class="heading__tag">
+                                        Share
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            
+                            <div class="blog__details__form" data-aos="fade-up">
+                                <div class="blog__details__input__heading">
+                                    <h5>Write your comment</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="blog__details__input">
+                                            <input type="text" placeholder="Enter your name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="blog__details__input">
+                                            <input type="text" placeholder="Enter your mail**">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="blog__details__input">
+                                            <input type="text" placeholder="Enter your  number*">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="blog__details__input">
+                                            <input type="text" placeholder="Website*">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="blog__details__input">
+                                            <textarea cols="30" rows="10">Enter your Massage*</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__check__box">
+                                    <input type="checkbox" checked="checked"> Save my name, email, and website in this browser for the next time I comment.
+                                </div>
+                            </div>
+                            <div class="blog__details__button">
+                                <a class="default__button" href="#">Post a Comment</a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+                            <div class="blogsidebar__content__inner__2">
+                                <div class="blogsidebar__img__2">
+                                    <img loading="lazy"  src="img/blog/blog_10.png" alt="blog">
+                                </div>
+                                <div class="blogsidebar__name__2">
+                                    <h5>
+                                        <a href="#"> Rosalina D. Willaim</a>
+
+                                    </h5>
+                                    <p>Blogger/Photographer</p>
+                                </div>
+                                <div class="blog__sidebar__text__2">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Veritatis distinctio suscipit reprehenderit atque</p>
+                                </div>
+                                <div class="blogsidbar__icon__2">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="icofont-facebook"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#"><i class="icofont-youtube-play"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+
+                            <h4 class="sidebar__title">Search here</h4>
+                            <form action="#">
+                                <div class="blogsudebar__input__area">
+                                    <input type="text" name="search" placeholder="Search product">
+                                    <button class="blogsidebar__input__icon">
+                                        <i class="icofont-search-1"></i>
+                                    </button>
+
+
+                                </div>
+
+
+                            </form>
+
+                        </div>
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+
+                            <h4 class="sidebar__title">categories</h4>
+                            <ul class="categorie__list">
+                                <li><a href="#">Mobile Set <span>03</span></a></li>
+                                <li><a href="#">Mobile Set <span>03</span></a></li>
+                                <li><a href="#">Raxila Dish nonyte<span>09</span></a></li>
+                                <li><a href="#">Fresh Vegetable <span>01</span></a></li>
+                                <li><a href="#">Fruites <span>00</span></a></li>
+                                <li><a href="#">Gesuriesey <span>26</span></a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+
+                            <h4 class="sidebar__title">Recent Post</h4>
+                            <ul class="recent__list">
+                                <li>
+                                    <div class="recent__img">
+                                        <a href="#">
+                                            <img loading="lazy"  src="img/blog/blog_11.png" alt="sidbar">
+                                            <div class="recent__number">
+                                                <span>01</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="recent__text">
+
+                                        <div class="recent__date">
+                                            <a href="#">23 December 2024</a>
+                                        </div>
+
+                                        <h6><a href="blog-deetails.html">Show at the University </a></h6>
+
+
+
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="recent__img">
+                                        <a href="#">
+                                            <img loading="lazy"  src="img/blog/blog_12.png" alt="sidbar">
+                                            <div class="recent__number">
+                                                <span>02</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="recent__text">
+
+                                        <div class="recent__date">
+                                            <a href="#">23 December 2024</a>
+                                        </div>
+
+                                        <h6><a href="blog-deetails.html">Show at the University </a></h6>
+
+
+
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="recent__img">
+                                        <a href="#">
+                                            <img loading="lazy"  src="img/blog/blog_13.png" alt="sidbar">
+                                            <div class="recent__number">
+                                                <span>03</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="recent__text">
+
+                                        <div class="recent__date">
+                                            <a href="#">23 December 2024</a>
+                                        </div>
+
+                                        <h6><a href="blog-deetails.html">Show at the University </a></h6>
+
+
+
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="recent__img">
+                                        <a href="#">
+                                            <img loading="lazy"  src="img/blog/blog_14.png" alt="sidbar">
+                                            <div class="recent__number">
+                                                <span>04</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="recent__text">
+
+                                        <div class="recent__date">
+                                            <a href="#">23 December 2024</a>
+                                        </div>
+
+                                        <h6><a href="blog-deetails.html">Show at the University </a></h6>
+
+
+
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+
+                            <h4 class="sidebar__title">Photo Gallery</h4>
+                            <div class="photo__gallery__img">
+
+                                <div class="single__gallery__img">
+                                    <img loading="lazy"  src="img/blog/blog_15.png" alt="photo">
+                                    <div class="gallery__icon">
+                                        <a class="popup__img" href="img/blog/blog_15.png"> <i class="icofont-eye-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single__gallery__img">
+                                    <img loading="lazy"  src="img/blog/blog_16.png" alt="photo">
+                                    <div class="gallery__icon">
+                                        <a class="popup__img" href="img/blog/blog_16.png"> <i class="icofont-eye-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single__gallery__img">
+                                    <img loading="lazy"  src="img/blog/blog_17.png" alt="photo">
+                                    <div class="gallery__icon">
+                                        <a class="popup__img" href="img/blog/blog_17.png"> <i class="icofont-eye-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single__gallery__img">
+                                    <img loading="lazy"  src="img/blog/blog_18.png" alt="photo">
+                                    <div class="gallery__icon">
+                                        <a class="popup__img" href="img/blog/blog_18.png"> <i class="icofont-eye-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single__gallery__img">
+                                    <img loading="lazy"  src="img/blog/blog_19.png" alt="photo">
+                                    <div class="gallery__icon">
+                                        <a class="popup__img" href="img/blog/blog_19.png"> <i class="icofont-eye-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single__gallery__img">
+                                    <img loading="lazy"  src="img/blog/blog_20.png" alt="photo">
+                                    <div class="gallery__icon">
+                                        <a class="popup__img" href="img/blog/blog_20.png"> <i class="icofont-eye-alt"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+
+                            <h4 class="sidebar__title">Get in Touch</h4>
+                            <div class="get__touch__input">
+                                <input type="text" placeholder="Enter name*">
+                                <input type="text" placeholder="Enter your mail*">
+                                <input type="text" placeholder="Massage*">
+                                <a class="default__button" href="blog-details.html">SEND MASSAGE</a>
+                            </div>
+
+                        </div>
+
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+
+                            <h4 class="sidebar__title">Popular tag</h4>
+                            <div class="populer__tag__list">
+                                <ul>
+                                    <li><a href="blog-details.html">Business</a></li>
+                                    <li><a href="blog-details.html">Design</a></li>
+                                    <li><a href="blog-details.html">apps</a></li>
+                                    <li><a href="blog-details.html">landing page</a></li>
+                                    <li><a href="blog-details.html">data</a></li>
+                                    <li><a href="blog-details.html">book</a></li>
+                                    <li><a href="blog-details.html">Design</a></li>
+                                    <li><a href="blog-details.html">book</a></li>
+                                    <li><a href="blog-details.html">landing page</a></li>
+                                    <li><a href="blog-details.html">data</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="blogsidebar__content__wraper__2" data-aos="fade-up">
+
+                            <h4 class="sidebar__title">Follow Us</h4>
+                            <div class="follow__icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="icofont-facebook"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><i class="icofont-youtube-play"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="icofont-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer__section__start -->
+        <div class="footerarea">
+            <div class="container">
+
+                <div class="footerarea__wrapper footerarea__wrapper__2">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+                            <div class="footerarea__inner footerarea__about__us">
+                                <div class="footerarea__heading">
+                                    <h3>About us</h3>
+                                </div>
+                                <div class="footerarea__content">
+                                    <p>Corporate clients and leisure travelers has been relying on Ground link for dependable safe, and professional chauffeured car end service in major cities across World.</p>
+                                </div>
+                                <div class="foter__bottom__text">
+                                    <div class="footer__bottom__icon">
+                                        <i class="icofont-clock-time"></i>
+                                    </div>
+                                    <div class="footer__bottom__content">
+                                        <h6>Opening Hours</h6>
+                                        <span>Mon - Fri(8.00 - 5.00)</span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="footerarea__inner">
+                                <div class="footerarea__heading">
+                                    <h3>Usefull Links</h3>
+                                </div>
+                                <div class="footerarea__list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Teachers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Partner</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Room-Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Gallery</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="footerarea__inner footerarea__padding__left">
+                                <div class="footerarea__heading">
+                                    <h3>Course</h3>
+                                </div>
+                                <div class="footerarea__list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Ui Ux Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Business Strategy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Softwere Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Business English</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="footerarea__copyright__wrapper footerarea__copyright__wrapper__2">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="copyright__logo">
+                                <a href="https://html.themewin.com/"><img loading="lazy"  src="img/logo/logo_2.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="footerarea__copyright__content footerarea__copyright__content__2">
+                                <p>Copyright © <span>2025</span> by EBYTE AFRICA. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="footerarea__icon footerarea__icon__2">
+                                <ul>
+                                    <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                                    <li><a href="http://vimeo.com/"><i class="icofont-vimeo"></i></a></li>
+                                    <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+                                    <li><a href="http://skype.com/"><i class="icofont-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- footer__section__end -->
+
+    </main>
+
+
+
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+</body>
+
+
+
+</html>
